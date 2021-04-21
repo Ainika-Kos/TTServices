@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import './logo.scss';
 
 const Logo = () => {
 
@@ -11,7 +12,15 @@ const Logo = () => {
     
   return (
     <div>
-      <button type="button" onClick={logoClickHandler}>Logo</button>
+      <div
+        className="logo"
+        role="button"
+        onClick={logoClickHandler}
+        tabIndex={0}
+        onKeyDown={logoClickHandler}
+      >
+        Decision
+      </div>
     </div>
   );
 };

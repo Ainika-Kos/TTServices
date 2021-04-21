@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'flexboxgrid';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+// import { library } from '@fortawesome/fontawesome-svg-core';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './styles/index.scss';
-
-library.add(faFacebook, faInstagram, faTwitter, faYoutube);
 
 ReactDOM.render(
   <React.StrictMode>

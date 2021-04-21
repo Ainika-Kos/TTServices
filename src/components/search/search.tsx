@@ -1,9 +1,12 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import './search.scss';
 
 const Search = () => {
   return (
-    <div>
-      <p>Search</p>
+    <div className="search">
+      <FontAwesomeIcon icon={faSearch} size="lg" className="search__icon" />
     </div>
   );
 };

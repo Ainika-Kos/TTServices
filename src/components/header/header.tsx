@@ -6,11 +6,21 @@ import './header.scss';
 
 const Header = () => {
   return (
-    <div className="header">
-      <Logo />
-      <Nav />
-      <Search />
-    </div>
+    <header className="header">
+      <div className="container">
+        <div className="row middle-xs">
+          <div className="col-xs-3">
+            <Logo />
+          </div>
+          <div className="col-xs-7">
+            <Nav />
+          </div>
+          <div className="col-xs-2">
+            <Search />
+          </div>
+        </div>
+      </div>
+    </header>
   );
 };
 

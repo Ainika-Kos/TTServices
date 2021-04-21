@@ -4,7 +4,7 @@ import './nav.scss';
 
 const Nav: FC = () => {
   return (
-    <nav className="nav">
+    <nav className="navigation">
       <NavLink to="/blog" className="nav" activeClassName="selected">
         Blog
       </NavLink>

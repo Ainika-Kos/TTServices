@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.search {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    & .search__icon {
+        color: $textGrey;
+        cursor: pointer;
+    }
+
+}
