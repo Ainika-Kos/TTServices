@@ -18,7 +18,8 @@ const Hero = () => {
         timeClass,
         buttonText,
         buttonClass,
-        background }) => {
+        background,
+        photoCount, }) => {
         return (
           <div key={id} className="hero__card-wrapper">
             <Card
@@ -31,6 +32,7 @@ const Hero = () => {
               buttonText={buttonText}
               buttonClass={buttonClass}
               background={background}
+              photoCount={photoCount}
             />
           </div>
         );

@@ -5,7 +5,9 @@ import './portraits.scss';
 
 const Portraits = () => {
 
-  const portraitCardData = cardsData.filter(({ category }) => category === 'portraitCard');
+  const portraitCardData = cardsData
+    .filter(({ category }) => category === 'portraitCard')
+    .filter(({ id }) => id >= 5 && id <= 8);
     
   return (
     <div className="portraits">
@@ -18,7 +20,9 @@ const Portraits = () => {
         timeClass,
         buttonText,
         buttonClass,
-        background }) => {
+        background,
+        photoCount,
+      }) => {
         return (
           <div key={id} className="portraits__card-wrapper">
             <Card
@@ -31,6 +35,7 @@ const Portraits = () => {
               buttonText={buttonText}
               buttonClass={buttonClass}
               background={background}
+              photoCount={photoCount}
             />
           </div>
         );

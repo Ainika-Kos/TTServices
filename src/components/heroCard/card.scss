@@ -64,6 +64,7 @@
 }
 
 
+/* background images */
 .watermelon {
     background-image: url('../../assets/images/watermelon.jpg');
 }
@@ -78,6 +79,27 @@
 
 .cup {
     background-image: url('../../assets/images/cup.jpg');
+}
+
+.wheel {
+    background-image: url('../../assets/images/wheel.jpg');
+}
+
+/* background colors */ 
+.lemongrass {
+    background-color: $lemongrass;
+}
+
+.aqua {
+    background-color: $aqua;
+}
+
+.champagne {
+    background-color: $champagne;
+}
+
+.macaroon {
+    background-color: $macaroon;
 }
 
 

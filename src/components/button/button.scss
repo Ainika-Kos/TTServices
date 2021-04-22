@@ -45,6 +45,30 @@
         background-color: $buttonCofee;
     }
 
+    &.pumpkin{
+        background-color: $buttonPumpkin;
+    }
+
+    &.khaki{
+        background-color: $buttonKhaki;
+    }
+
+    &.red{
+        background-color: $buttonRed;
+    }
+
+    &.sakura{
+        background-color: $buttonSakura;
+    }
+
+    &.towerGrey{
+        background-color: $buttonTowergrey;
+    }
+
+    &.chocolate{
+        background-color: $buttonChocolate;
+    }
+
     &:hover {
         opacity: 0.7;
     }

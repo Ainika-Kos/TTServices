@@ -13,6 +13,7 @@ const Card: FC<CardType> = ({
   buttonText,
   buttonClass,
   background,
+  photoCount
 }) => {
   return (
     <div className={`card ${category} ${background}`}>

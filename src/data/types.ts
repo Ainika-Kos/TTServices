@@ -8,5 +8,6 @@ export type CardType = {
   buttonText: string,
   buttonClass: string,
   background: string,
+  photoCount: number;
 };
 
