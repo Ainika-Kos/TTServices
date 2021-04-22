@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+
+.heroCard {
+    height: 100%;
+    min-height: 910px;
+    margin: 0;
+    padding: 45px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroCard__info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+    line-height: 1.2;
+    color: $textWhite;
+}
+
+.heroCard__info__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+
+}
+
+.heroCard__info__time {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .heroCard {
+        padding: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+
+    .heroCard {
+        padding: 20px;
+        min-height: 400px;
+    }
+
+    .heroCard__info-wrapper{
+        min-height: 150px;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+
+    .heroCard {
+        padding: 20px;
+        min-height: 200px;
+    }
+
+    .heroCard__info-wrapper{
+        min-height: 150px;
+    }
+    
+}

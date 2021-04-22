@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+
+.btn {
+    width: 95px;
+    min-height: 25px;
+    border-radius: 10px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 5px;
+    font-family: Ubuntu;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $buttonText;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+
+    &.yellow {
+        background-color: $buttonYellow;
+    }
+
+    &.pink{
+        background-color: $buttonPink;
+    }
+
+    &.green{
+        background-color: $buttonGreen;
+    }
+
+    &.orange{
+        background-color: $buttonOrange;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.btn--hero {
+    margin-top: 550px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .btn--hero {
+        margin-top: 100px;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+
+    .btn--hero {
+        margin-top: 50px;
+    }
+    
+}

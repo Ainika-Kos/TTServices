@@ -9,13 +9,13 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="row middle-xs">
-          <div className="col-xs-3">
+          <div className="col-xs-6 col-md-3">
             <Logo />
           </div>
-          <div className="col-xs-7">
+          <div className="col-xs-12 col-md-7">
             <Nav />
           </div>
-          <div className="col-xs-2">
+          <div className="col-xs-6 col-md-2">
             <Search />
           </div>
         </div>
