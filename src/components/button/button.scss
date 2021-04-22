@@ -33,6 +33,18 @@
         background-color: $buttonOrange;
     }
 
+    &.salmon{
+        background-color: $buttonSalmon;
+    }
+
+    &.citrus{
+        background-color: $buttonCitrus;
+    }
+
+    &.cofee{
+        background-color: $buttonCofee;
+    }
+
     &:hover {
         opacity: 0.7;
     }
@@ -40,6 +52,11 @@
 
 .btn--hero {
     margin-top: 550px;
+}
+
+.btn--portraits {
+    color: $textWhite;
+    margin-top: 400px;
 }
 
 @media only screen and (max-width: 900px) {

@@ -1,15 +1,15 @@
 import React from 'react';
-import { heroCardData } from '../../data/heroCards';
+import { portraitsCardData } from '../../data/portraitCards';
 import HeroCard from '../heroCard/heroCard';
-import './hero.scss';
+import './portraits.scss';
 
-const Hero = () => {
+const Portraits = () => {
   return (
-    <div className="hero">
-      {heroCardData.map(({
+    <div className="portraits">
+      {portraitsCardData.map(({
         id, title, time, buttonText, className, buttonClass, background }) => {
         return (
-          <div key={id} className="hero__card-wrapper">
+          <div key={id} className="portraits__card-wrapper">
             <HeroCard
               id={id}
               title={title}
@@ -26,4 +26,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Portraits;

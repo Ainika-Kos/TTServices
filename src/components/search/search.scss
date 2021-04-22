@@ -9,6 +9,11 @@
     & .search__icon {
         color: $textGrey;
         cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $logo;
+        }
     }
 
 }
