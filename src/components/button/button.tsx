@@ -2,14 +2,14 @@ import React, { FC } from 'react';
 import './button.scss';
 
 type ButtonProps = {
-  className?: string;
+  buttonClass?: string;
   onClick?: () => void;
   text: string,
 };
 
-const Button:FC<ButtonProps> = ({ className, onClick, text }) => {
+const Button:FC<ButtonProps> = ({ buttonClass, onClick, text }) => {
   return (
-    <button type='button' className={`btn ${className}`} onClick={onClick}>
+    <button type='button' className={`btn ${buttonClass}`} onClick={onClick}>
       {text}
     </button>
   );

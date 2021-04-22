@@ -1,21 +1,34 @@
 import React from 'react';
-import { heroCardData } from '../../data/heroCards';
-import HeroCard from '../heroCard/heroCard';
+import { cardsData } from '../../data/cardsData';
+import Card from '../heroCard/card';
 import './hero.scss';
 
 const Hero = () => {
+
+  const heroCardsData = cardsData.filter(({ category }) => category === 'heroCard');
+
   return (
     <div className="hero">
-      {heroCardData.map(({
-        id, title, time, buttonText, className, buttonClass, background }) => {
+      {heroCardsData.map(({
+        id,
+        category,
+        title,
+        titleClass,
+        time,
+        timeClass,
+        buttonText,
+        buttonClass,
+        background }) => {
         return (
           <div key={id} className="hero__card-wrapper">
-            <HeroCard
+            <Card
               id={id}
+              category={category}
               title={title}
+              titleClass={titleClass}
               time={time}
+              timeClass={timeClass}
               buttonText={buttonText}
-              className={className}
               buttonClass={buttonClass}
               background={background}
             />
