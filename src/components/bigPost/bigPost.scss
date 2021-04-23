@@ -1,29 +1,25 @@
 @import '../../styles/variables';
 
-.portraits {
+.bigPost {
+    background-image: url('../../assets/images/bigPost.jpg');
     width: 100%;
     height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
 }
 
-.portraits__card-wrapper {
+.bigPost__card-wrapper {
     height: 100%;
-    min-height: 790px;
+    min-height: 695px;
     flex-basis: 25%;
-}
-
-@media only screen and (max-width: 1300px) {
-
-    .portraits__card-wrapper {
-        min-height: 500px;
-    }
-    
 }
 
 @media only screen and (max-width: 900px) {
 
-    .portraits__card-wrapper {
+    .bigPost__card-wrapper {
         min-height: 400px;
         flex-basis: 50%;
     }
@@ -32,9 +28,10 @@
 
 @media only screen and (max-width: 650px) {
 
-    .portraits__card-wrapper {
+    .bigPost__card-wrapper {
         min-height: 180px;
         flex-basis: 100%;
     }
     
 }
+

@@ -1,15 +1,18 @@
-import React from 'react';
-import { cardsData } from '../../data/cardsData';
-import Card from '../heroCard/card';
+import React, { FC } from 'react';
+import { CardType } from '../../data/types';
+import Card from '../card/card';
 import './hero.scss';
 
-const Hero = () => {
+type HeroProps = {
+  cardsCategoryData: CardType[];
+};
 
-  const heroCardsData = cardsData.filter(({ category }) => category === 'heroCard');
+const Hero: FC<HeroProps> = ({ cardsCategoryData }) => {
+
 
   return (
     <div className="hero">
-      {heroCardsData.map(({
+      {cardsCategoryData.map(({
         id,
         category,
         title,

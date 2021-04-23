@@ -1,17 +1,17 @@
 import React, { FC } from 'react';
 import { CardType } from '../../data/types';
 import Card from '../card/card';
-import './portraits.scss';
+import './bigPost.scss';
 
-type PortraitProps = {
+type BigPostProps = {
   cardsCategoryData: CardType[];
 };
 
-const Portraits: FC<PortraitProps> = ({ cardsCategoryData }) => {
+const BigPost: FC<BigPostProps> = ({ cardsCategoryData }) => {
 
-    
+
   return (
-    <div className="portraits">
+    <div className="bigPost">
       {cardsCategoryData.map(({
         id,
         category,
@@ -22,10 +22,9 @@ const Portraits: FC<PortraitProps> = ({ cardsCategoryData }) => {
         buttonText,
         buttonClass,
         background,
-        photoCount,
-      }) => {
+        photoCount, }) => {
         return (
-          <div key={id} className="portraits__card-wrapper">
+          <div key={id} className="bigPost__card-wrapper">
             <Card
               id={id}
               category={category}
@@ -45,4 +44,4 @@ const Portraits: FC<PortraitProps> = ({ cardsCategoryData }) => {
   );
 };
 
-export default Portraits;
+export default BigPost;

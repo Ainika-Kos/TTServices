@@ -51,6 +51,20 @@
 
 }
 
+.bigPostCard {
+    min-height: 695px;
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .card__info-wrapper {
+        min-height: 200px;
+    }
+
+}
+
 .white {
     color: $textWhite;
 }
@@ -83,6 +97,22 @@
 
 .wheel {
     background-image: url('../../assets/images/wheel.jpg');
+}
+
+.shoes {
+    background-image: url('../../assets/images/shoes.jpg');
+}
+
+.woman {
+    background-image: url('../../assets/images/woman.jpg');
+}
+
+.pinapple {
+    background-image: url('../../assets/images/pinapple.jpg');
+}
+
+.man {
+    background-image: url('../../assets/images/man.jpg');
 }
 
 /* background colors */ 
