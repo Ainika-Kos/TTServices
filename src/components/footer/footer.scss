@@ -1,0 +1,100 @@
+@import '../../styles/variables';
+
+.footer {
+    background-color: $textBlack;
+    color: $textWhite;
+    padding: 80px 40px 100px 60px;
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+        color: $textWhite;
+        margin-bottom: 50px;
+    }
+}
+
+.footer__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    & div {
+        flex-basis: 25%;
+    }
+}
+
+.footer__info__contacts {
+    font-size: 12px;
+
+    & p {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.footer__info__social {
+    display: flex;
+    justify-content: space-around;
+
+    & span {
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &.twitter {
+            background-color: $buttonRed;
+        }
+
+        &.instagram {
+            background-color: $buttonTowergrey;
+        }
+
+        &.facebook {
+            background-color: $buttonOrange;
+        }
+
+        &.youtube {
+            background-color: $buttonChocolate;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-orange {
+    font-size: 18px;
+    font-weight: 300;
+    color: $buttonSakura;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .footer__info-wrapper > div {
+        
+            flex-basis: 50%;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+
+    .footer__info-wrapper > div {
+        
+        flex-basis: 100%;
+    
+}
+    
+}

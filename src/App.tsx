@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import Blog from './pages/blog';
 import Categories from './pages/categories';
@@ -36,6 +37,7 @@ const App = () => {
           <Contacts />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 };
