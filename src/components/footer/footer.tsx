@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
 import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Logo from '../logo/logo';
 import './footer.scss';
 
@@ -29,10 +31,18 @@ const Footer: FC = () => {
           </NavLink>
         </div>
         <div className="footer__info__social">
-          <span className="twitter">vk</span>
-          <span className="instagram">inst</span>
-          <span className="facebook">fb</span>
-          <span className="youtube">yt</span>
+          <span className="twitter">
+            <FontAwesomeIcon icon={faTwitter} size="1x" className="footer__info__social__icon" />
+          </span>
+          <span className="instagram">
+            <FontAwesomeIcon icon={faInstagram} size="1x" className="footer__info__social__icon" />
+          </span>
+          <span className="facebook">
+            <FontAwesomeIcon icon={faFacebook} size="1x" className="footer__info__social__icon" />
+          </span>
+          <span className="youtube">
+            <FontAwesomeIcon icon={faYoutube} size="1x" className="footer__info__social__icon" />
+          </span>
         </div>
         <div className="footer__info__design">
           <p className="text-design">grafpix</p>
