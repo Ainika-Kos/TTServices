@@ -16,16 +16,16 @@ const Footer: FC = () => {
         </div>
         <div className="footer__info__navigation">  
           <NavLink to="/about" className="footer_nav" activeClassName="selected">
-            About
+            ¬ About
           </NavLink>
           <NavLink to="/articles" className="footer_nav" activeClassName="selected">
-            Articles
+            ¬ Articles
           </NavLink>
           <NavLink to="/news" className="footer_nav" activeClassName="selected">
-            News
+            ¬ News
           </NavLink>
           <NavLink to="/blog" className="footer_nav" activeClassName="selected">
-            Blog
+            ¬ Blog
           </NavLink>
         </div>
         <div className="footer__info__social">
@@ -35,7 +35,7 @@ const Footer: FC = () => {
           <span className="youtube">yt</span>
         </div>
         <div className="footer__info__design">
-          <p>Grafpix</p>
+          <p className="text-design">grafpix</p>
         </div>
       </div>
     </footer>
