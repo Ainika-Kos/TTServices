@@ -37,7 +37,21 @@
     }
 }
 
-.portraitCard {
+.portraitCardSmall {
+    min-height: 755px;
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .card__info-wrapper {
+        min-height: 200px;
+    }
+
+}
+
+.portraitCardBig {
     min-height: 790px;
     width: 100%;
     height: auto;
@@ -140,7 +154,8 @@
         padding: 20px;
     }
 
-    .portraitCard {
+    .portraitCardBig,
+    .portraitCardSmall {
         min-height: 650px;
         padding: 20px;
     }
@@ -158,7 +173,8 @@
         }
     } 
 
-    .portraitCard {
+    .portraitCardBig,
+    .portraitCardSmall {
         min-height: 400px;
         padding: 30px;
     }
@@ -176,7 +192,8 @@
         }
     }
 
-    .portraitCard {
+    .portraitCardBig,
+    .portraitCardSmall {
         min-height: 350px;
         padding: 30px;
     }

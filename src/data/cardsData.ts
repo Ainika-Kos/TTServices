@@ -51,7 +51,7 @@ export const cardsData: CardType[] = [
   },
   {
     id: 5,
-    category: 'portraitCard',
+    category: 'portraitCardBig',
     title: 'Photo And Love Have 4 Things In Common',
     titleClass: 'black',
     time: '2 hours ago',
@@ -63,7 +63,7 @@ export const cardsData: CardType[] = [
   },
   {
     id: 6,
-    category: 'portraitCard',
+    category: 'portraitCardBig',
     title: 'Winning Tactics For Photo',
     titleClass: 'black',
     time: '2 hours ago',
@@ -75,7 +75,7 @@ export const cardsData: CardType[] = [
   },
   {
     id: 7,
-    category: 'portraitCard',
+    category: 'portraitCardBig',
     title: 'Photo An Incredibly Easy Method That Works For All',
     titleClass: 'black',
     time: '2 hours ago',
@@ -87,7 +87,7 @@ export const cardsData: CardType[] = [
   },
   {
     id: 8,
-    category: 'portraitCard',
+    category: 'portraitCardBig',
     title: 'Why Photo Is The Only Skill You Really Need',
     titleClass: 'black',
     timeClass: 'grey',
@@ -159,7 +159,7 @@ export const cardsData: CardType[] = [
   },
   {
     id: 14,
-    category: 'portraitCard',
+    category: 'portraitCardSmall',
     title: "Here's A Quick Way To Solve A Problem with Photo",
     titleClass: 'black',
     timeClass: 'white',
@@ -171,7 +171,7 @@ export const cardsData: CardType[] = [
   },
   {
     id: 15,
-    category: 'portraitCard',
+    category: 'portraitCardSmall',
     title: 'Listen To Your Customers. They Will Tell You All About Photo',
     titleClass: 'black',
     timeClass: 'grey',
@@ -183,7 +183,7 @@ export const cardsData: CardType[] = [
   },
   {
     id: 16,
-    category: 'portraitCard',
+    category: 'portraitCardSmall',
     title: 'Do Photo Better Than Most',
     titleClass: 'black',
     timeClass: 'grey',
@@ -195,7 +195,7 @@ export const cardsData: CardType[] = [
   },
   {
     id: 17,
-    category: 'portraitCard',
+    category: 'portraitCardSmall',
     title: "10 Secret Things You Didn't Know About Photo",
     titleClass: 'white',
     timeClass: 'white',

@@ -7,17 +7,17 @@ import { cardsData } from '../data/cardsData';
 
 const Home = () => {
 
-  const heroCardsData = cardsData.filter(({ category }) => category === 'heroCard');
+  const heroCardsData = cardsData
+    .filter(({ category }) => category === 'heroCard');
   
-  const portraitCardDataFirst = cardsData
-    .filter(({ category }) => category === 'portraitCard')
-    .filter(({ id }) => id >= 5 && id <= 8);
+  const portraitCardDataBig = cardsData
+    .filter(({ category }) => category === 'portraitCardBig');
   
-  const portraitCardDataSecond = cardsData
-    .filter(({ category }) => category === 'portraitCard')
-    .filter(({ id }) => id >= 14 && id <= 17);
+  const portraitCardDataSmall = cardsData
+    .filter(({ category }) => category === 'portraitCardSmall');
   
-  const bigPostCardData = cardsData.filter(({ category }) => category === 'bigPostCard');
+  const bigPostCardData = cardsData
+    .filter(({ category }) => category === 'bigPostCard');
   
   return (
     <div>
@@ -25,13 +25,13 @@ const Home = () => {
         <Hero cardsCategoryData={heroCardsData} />
       </section>
       <section>
-        <Portraits cardsCategoryData={portraitCardDataFirst} />
+        <Portraits cardsCategoryData={portraitCardDataBig} />
       </section>
       <section>
         <BigPost cardsCategoryData={bigPostCardData} />
       </section>
       <section>
-        <Portraits cardsCategoryData={portraitCardDataSecond} />
+        <Portraits cardsCategoryData={portraitCardDataSmall} />
       </section>
       <section>
         <More />
