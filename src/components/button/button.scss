@@ -15,7 +15,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s;
 
     &.yellow {
         background-color: $buttonYellow;
@@ -92,9 +92,23 @@
     margin-top: 400px;
 }
 
+.btn--galeryCard {
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+
 .btn--bigPost {
     color: $textWhite;
     margin-top: 200px;
+}
+
+.gallery {
+    color: $textWhite;
+    background-color: $buttonSalmon;
+    min-height: 40px;
+    min-width: 140px;
+    font-size: 18px;
 }
 
 @media only screen and (max-width: 1300px) {

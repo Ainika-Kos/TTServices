@@ -12,6 +12,11 @@
     background-size: cover;
 }
 
+.card__image {
+    width:100%;
+    height: auto;
+}
+
 .card__info-wrapper {
     display: flex;
     flex-direction: column;
@@ -53,6 +58,19 @@
     & .card__info-wrapper {
         min-height: 200px;
      }
+}
+
+.galeryCard {
+    min-height: 639px;
+    height: auto;
+    padding: 0;
+    
+
+    & .card__info-wrapper {
+        min-height: 240px;
+        padding: 45px 60px;
+    }
+
 }
 
 .portraitCardSmall {
@@ -174,6 +192,15 @@
     .portraitCardSmall {
         min-height: 650px;
     }
+
+    .galeryCard {
+
+        & .card__info-wrapper{
+            min-height: 200px;
+            padding: 20px;
+        }
+
+    }
     
 }
 
@@ -192,6 +219,11 @@
     .portraitCardSmall {
         min-height: 400px;
         padding: 30px;
+    }
+
+    .galeryCard {
+        min-height: 500px;
+
     }
     
 }
@@ -214,5 +246,9 @@
         padding: 30px;
     }
 
-    
+    .galeryCard {
+        min-height: 400px;
+
+    }
+
 }

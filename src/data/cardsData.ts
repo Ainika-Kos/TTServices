@@ -12,6 +12,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--hero yellow',
     background: '',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 2,
@@ -24,6 +26,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--hero pink',
     background: '',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 3,
@@ -36,6 +40,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--hero green',
     background: '',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 4,
@@ -48,6 +54,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--hero orange',
     background: '',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 5,
@@ -60,6 +68,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--portraits salmon',
     background: 'watermelon',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 6,
@@ -72,6 +82,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--portraits orange',
     background: 'cactus',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 7,
@@ -84,6 +96,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--portraits citrus',
     background: 'building',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 8,
@@ -96,6 +110,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--portraits cofee',
     background: 'cup',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 9,
@@ -108,6 +124,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--landscape green',
     background: 'champagne',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 10,
@@ -120,6 +138,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--smallPost green',
     background: 'lemongrass',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 11,
@@ -132,6 +152,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--smallPost yellow',
     background: 'wheel',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 12,
@@ -144,6 +166,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--smallPost pink',
     background: 'aqua',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 13,
@@ -156,6 +180,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--bigPost khaki',
     background: '',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 14,
@@ -168,6 +194,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--portraits red',
     background: 'shoes',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 15,
@@ -180,6 +208,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--portraits sakura',
     background: 'woman',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 16,
@@ -192,6 +222,8 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--portraits towerGrey',
     background: 'pinapple',
     photoCount: 0,
+    image: '',
+    icon: '',
   },
   {
     id: 17,
@@ -204,31 +236,51 @@ export const cardsData: CardType[] = [
     buttonClass: 'btn--portraits chocolate',
     background: 'man',
     photoCount: 0,
+    image: '',
+    icon: '',
+  },
+  {
+    id: 18,
+    category: 'galeryCard',
+    title: 'The A - Z Guide Of Photo',
+    titleClass: 'grey',
+    timeClass: 'grey',
+    time: '2 hours ago',
+    buttonText: 'Photo',
+    buttonClass: 'btn--galeryCard pumpkin',
+    background: 'champagne',
+    photoCount: 24,
+    image: 'eye',
+    icon: 'photocamera'
+  },
+  {
+    id: 19,
+    category: 'galeryCard',
+    title: 'How To Use Photo To Desire',
+    titleClass: 'grey',
+    timeClass: 'grey',
+    time: '2 hours ago',
+    buttonText: 'Photo',
+    buttonClass: 'btn--galeryCard green',
+    background: 'macaroon',
+    photoCount: 105,
+    image: 'jacket',
+    icon: 'photocamera'
+  },
+  {
+    id: 20,
+    category: 'galeryCard',
+    title: "Photo? It's Easy If You Do It Smart",
+    titleClass: 'grey',
+    timeClass: 'grey',
+    time: '2 hours ago',
+    buttonText: 'Photo',
+    buttonClass: 'btn--galeryCard salmon',
+    background: 'lemongrass',
+    photoCount: 17,
+    image: 'bubble',
+    icon: 'photocamera'
   },
 ];
 
 
-// {
-//     id: 13,
-//     category: 'galeryCard',
-//     title: 'The A - Z Guide Of Photo',
-//     titleClass: 'grey',
-//     timeClass: 'grey',
-//     time: '2 hours ago',
-//     buttonText: 'Photo',
-//     buttonClass: 'btn--galeryPost pumpkin',
-//     background: 'champagne',
-//     photoCount: 24,
-//   },
-//   {
-//     id: 14,
-//     category: 'galeryCard',
-//     title: 'How To Use Photo To Desire',
-//     titleClass: 'grey',
-//     timeClass: 'grey',
-//     time: '2 hours ago',
-//     buttonText: 'Photo',
-//     buttonClass: 'btn--galeryPost green',
-//     background: 'macaroon',
-//     photoCount: 24,
-//   },

@@ -23,6 +23,8 @@ const Portraits: FC<PortraitProps> = ({ cardsCategoryData }) => {
         buttonClass,
         background,
         photoCount,
+        image,
+        icon
       }) => {
         return (
           <div key={id} className="portraits__card-wrapper">
@@ -37,6 +39,8 @@ const Portraits: FC<PortraitProps> = ({ cardsCategoryData }) => {
               buttonClass={buttonClass}
               background={background}
               photoCount={photoCount}
+              image={image}
+              icon={icon}
             />
           </div>
         );

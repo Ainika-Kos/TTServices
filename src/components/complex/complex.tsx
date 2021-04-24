@@ -31,7 +31,10 @@ const Complex = () => {
             buttonText,
             buttonClass,
             background,
-            photoCount, }) => {
+            photoCount,
+            image,
+            icon
+          }) => {
             return (
               <div className="complex__landscape-wrapper" key={id}>
                 <Card
@@ -45,6 +48,8 @@ const Complex = () => {
                   buttonClass={buttonClass}
                   background={background}
                   photoCount={photoCount}
+                  image={image}
+                  icon={icon}
                 />
               </div>
             );
@@ -74,7 +79,10 @@ const Complex = () => {
             buttonText,
             buttonClass,
             background,
-            photoCount, }) => {
+            photoCount,
+            image,
+            icon
+          }) => {
             return (
               <div className="complex__card-wrapper" key={id}>
                 <Card
@@ -88,6 +96,8 @@ const Complex = () => {
                   buttonClass={buttonClass}
                   background={background}
                   photoCount={photoCount}
+                  image={image}
+                  icon={icon}
                 />
               </div>
             );

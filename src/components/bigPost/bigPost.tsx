@@ -22,7 +22,10 @@ const BigPost: FC<BigPostProps> = ({ cardsCategoryData }) => {
         buttonText,
         buttonClass,
         background,
-        photoCount, }) => {
+        photoCount,
+        image,
+        icon
+      }) => {
         return (
           <div key={id} className="bigPost__card-wrapper">
             <Card
@@ -36,6 +39,8 @@ const BigPost: FC<BigPostProps> = ({ cardsCategoryData }) => {
               buttonClass={buttonClass}
               background={background}
               photoCount={photoCount}
+              image={image}
+              icon={icon}
             />
           </div>
         );

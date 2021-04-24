@@ -9,6 +9,8 @@ export type CardType = {
   buttonClass: string,
   background: string,
   photoCount: number;
+  image: string;
+  icon: string;
 };
 
 export type NewsType = {
@@ -23,4 +25,5 @@ export type ArticlesType = {
   title: string,
   time: string,
 };
+
 

@@ -37,7 +37,7 @@
 }
 
 .complex__card-wrapper {
-    flex-basis: 33.5%;
+    flex: 33.5%;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -62,23 +62,14 @@
 
 @media only screen and (max-width: 650px) {
 
-    .complex__landscape-articles-wrapper{
-        flex-direction: column;
-    }
-    
-    .complex__landscape-wrapper,
-    .complex__articles-wrapper{
-        flex-basis: 100%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-
+    .complex__landscape-articles-wrapper,
     .complex__cards-wrapper {
         flex-direction: column;
     }
     
+    .complex__landscape-wrapper,
+    .complex__articles-wrapper,
     .complex__card-wrapper {
-        flex-basis: 100%;
+        flex: 100%;
     }
 }
