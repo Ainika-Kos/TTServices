@@ -18,3 +18,9 @@ export type NewsType = {
   text: string,
 };
 
+export type ArticlesType = {
+  id: number,
+  title: string,
+  time: string,
+};
+
