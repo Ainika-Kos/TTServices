@@ -4,12 +4,33 @@
     height: 100%;
     margin: 0;
     padding: 45px 60px;
+    position: relative;
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+
+    & .card__icon-wrapper {
+        position: absolute;
+        bottom: -3%;
+        right: 0;
+        overflow: hidden;
+
+        & .card__photoCount {
+            position: absolute;
+            bottom: 20%;
+            left: 3%;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        & .card__icon {
+           color: $photoIconGrey;
+        }
+    }
 }
 
 .card__image {
