@@ -44,6 +44,14 @@
     }
 }
 
+.smallPostCard {
+    min-height: 391px;
+
+    & .card__info-wrapper {
+        min-height: 200px;
+     }
+}
+
 .portraitCardSmall {
     min-height: 755px;
     width: 100%;

@@ -9,60 +9,90 @@ import CardArticles from '../cardArticles/cardArticles';
 
 const Complex = () => {
 
-  const landscapeData = cardsData.filter(({ category }) => category === 'landscapeCard');
+  const landscapeData = cardsData
+    .filter(({ category }) => category === 'landscapeCard');
+
+  const smallPostData = cardsData.filter(({ category }) => category === 'smallPostCard');
   
   return (
     <div className="complex">
       <div className="complex__news-wrapper">
         <NewsBlock newsData={newsData} />
       </div>
-      <div className="complex__landscape-wrapper">
-        {landscapeData.map(({
-          id,
-          category,
-          title,
-          titleClass,
-          time,
-          timeClass,
-          buttonText,
-          buttonClass,
-          background,
-          photoCount
-        }) => {
-          return (
-            <div key={id}>
-              <Card
-                id={id}
-                category={category}
-                title={title}
-                titleClass={titleClass}
-                time={time}
-                timeClass={timeClass}
-                buttonText={buttonText}
-                buttonClass={buttonClass}
-                background={background}
-                photoCount={photoCount}
-              />
-            </div>
-          );
-        })}
-        <div className="landscape__cards-wrapper">
-          <p>Card</p>
-          <p>Card</p>
+      <div className="complex__landscape-articles-cards-wrapper">
+        <div className="complex__landscape-articles-wrapper">
+          {landscapeData.map(({
+            id,
+            category,
+            title,
+            titleClass,
+            time,
+            timeClass,
+            buttonText,
+            buttonClass,
+            background,
+            photoCount, }) => {
+            return (
+              <div className="complex__landscape-wrapper" key={id}>
+                <Card
+                  id={id}
+                  category={category}
+                  title={title}
+                  titleClass={titleClass}
+                  time={time}
+                  timeClass={timeClass}
+                  buttonText={buttonText}
+                  buttonClass={buttonClass}
+                  background={background}
+                  photoCount={photoCount}
+                />
+              </div>
+            );
+          })}
+          <div className="complex__articles-wrapper">
+            {articlesData.map((item) => {
+              return (
+                <div key={item.id}>
+                  <CardArticles
+                    id={item.id}
+                    title={item.title}
+                    time={item.time}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
-      <div className="complex__articles-wrapper">
-        {articlesData.map(({ id, title, time }) => {
-          return (
-            <div>
-              <CardArticles
-                id={id}
-                title={title}
-                time={time}
-              />
-            </div>
-          );
-        })}
+        <div className="complex__cards-wrapper">
+          {smallPostData.map(({
+            id,
+            category,
+            title,
+            titleClass,
+            time,
+            timeClass,
+            buttonText,
+            buttonClass,
+            background,
+            photoCount, }) => {
+            return (
+              <div className="complex__card-wrapper" key={id}>
+                <Card
+                  id={id}
+                  category={category}
+                  title={title}
+                  titleClass={titleClass}
+                  time={time}
+                  timeClass={timeClass}
+                  buttonText={buttonText}
+                  buttonClass={buttonClass}
+                  background={background}
+                  photoCount={photoCount}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -3,6 +3,10 @@
 .newsBlock {
     padding: 45px 60px;
     background-color: $textWhite;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .newsBlock__title {
@@ -10,11 +14,16 @@
     font-weight: 700;
     color: $textGrey;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .newsBlock__link {
     font-size: 14px;
     font-weight: 700;
     color: $buttonGreen;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $buttonKhaki;
+    }
 }
