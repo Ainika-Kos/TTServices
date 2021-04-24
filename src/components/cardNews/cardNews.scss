@@ -33,3 +33,15 @@
     margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 1400px) {
+
+    .cardNews__title {
+        font-size: 24px;
+    }
+    
+    .cardNews__text {
+        font-size: 16px;
+    }
+    
+}
+

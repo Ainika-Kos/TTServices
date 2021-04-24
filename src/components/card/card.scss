@@ -7,6 +7,9 @@
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card__info-wrapper {
@@ -57,9 +60,6 @@
     width: 100%;
     height: auto;
     padding: 45px 80px 45px 60px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     & .card__info-wrapper {
         min-height: 200px;
@@ -71,9 +71,6 @@
     min-height: 790px;
     width: 100%;
     height: auto;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     & .card__info-wrapper {
         min-height: 200px;
@@ -163,17 +160,19 @@
 }
 
 
-
 @media only screen and (max-width: 1300px) {
 
-    .heroCard {
+    .heroCard,
+    .portraitCardBig,
+    .portraitCardSmall,
+    .landscapeCard,
+    .smallPostCard {
         padding: 20px;
     }
 
     .portraitCardBig,
     .portraitCardSmall {
         min-height: 650px;
-        padding: 20px;
     }
     
 }
@@ -209,7 +208,8 @@
     }
 
     .portraitCardBig,
-    .portraitCardSmall {
+    .portraitCardSmall,
+    .smallPostCard {
         min-height: 350px;
         padding: 30px;
     }

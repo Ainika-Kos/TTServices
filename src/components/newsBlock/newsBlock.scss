@@ -27,3 +27,11 @@
         color: $buttonKhaki;
     }
 }
+
+@media only screen and (max-width: 1300px) {
+
+    .newsBlock {
+        padding: 40px 20px;
+    }
+    
+}
