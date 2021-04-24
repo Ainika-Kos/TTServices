@@ -46,11 +46,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    &:hover {
-        transform: scale(1.05);
-        box-shadow: 1px 8px 20px $textGrey;
-    }
-
     & .card__info-wrapper {
         min-height: 200px;
     }
@@ -64,11 +59,6 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    &:hover {
-        transform: scale(1.05);
-        box-shadow: 1px 8px 20px $textGrey;
-    }
 
     & .card__info-wrapper {
         min-height: 200px;

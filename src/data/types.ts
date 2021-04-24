@@ -11,3 +11,10 @@ export type CardType = {
   photoCount: number;
 };
 
+export type NewsType = {
+  id: number,
+  time: string,
+  title: string,
+  text: string,
+};
+

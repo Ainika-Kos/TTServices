@@ -1,0 +1,25 @@
+.complex {
+    display: flex;
+}
+
+.complex__news-wrapper {
+    flex-basis: 25%;
+}
+
+.complex__landscape-wrapper {
+    flex-basis: 50%;
+}
+
+.landscape__cards-wrapper {
+    display: flex;
+
+    & p {
+       flex-basis: 50%;
+    }
+}
+
+.complex__articles-wrapper {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+}

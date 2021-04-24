@@ -1,5 +1,6 @@
 import React from 'react';
 import BigPost from '../components/bigPost/bigPost';
+import Complex from '../components/complex/complex';
 import Hero from '../components/hero/hero';
 import More from '../components/more/more';
 import Portraits from '../components/portraits/portraits';
@@ -23,6 +24,9 @@ const Home = () => {
     <div>
       <section>
         <Hero cardsCategoryData={heroCardsData} />
+      </section>
+      <section>
+        <Complex />
       </section>
       <section>
         <Portraits cardsCategoryData={portraitCardDataBig} />

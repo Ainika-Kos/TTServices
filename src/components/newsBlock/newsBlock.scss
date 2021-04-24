@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.newsBlock {
+    padding: 45px 60px;
+}
+
+.newsBlock__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: $textGrey;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.newsBlock__link {
+    font-size: 14px;
+    font-weight: 700;
+    color: $buttonGreen;
+}

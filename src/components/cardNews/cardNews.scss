@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.cardNews {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.cardNews__time {
+    font-size: 14px;
+    color: $textGreyLight;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.cardNews__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: $buttonGreen;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.cardNews__text {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
