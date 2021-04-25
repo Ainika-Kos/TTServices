@@ -12,33 +12,36 @@ import Services from './pages/services';
 
 const App = () => {
   return (
-    <Router>
-      <Header /> 
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/blog">
-          <Blog />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/services">
-          <Services />
-        </Route>
-        <Route path="/news">
-          <News />
-        </Route>
-        <Route path="/categories">
-          <Categories />
-        </Route>
-        <Route path="/contacts">
-          <Contacts />
-        </Route>
-      </Switch>
-      <Footer />
-    </Router>
+
+    <div className="app">
+      <Router>
+        <Header /> 
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/services">
+            <Services />
+          </Route>
+          <Route path="/news">
+            <News />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
+    </div>
   );
 };
 

@@ -20,3 +20,16 @@ body {
   color: $textBlack;
   background-color: $mainBackground;
 }
+
+.app {
+  width: 100%;
+}
+
+@media only screen and (min-width: 2000px) {
+
+  .page-wrapper {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  
+}

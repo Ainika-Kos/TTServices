@@ -58,7 +58,8 @@
 
 
 .heroCard {
-    min-height: 910px;
+    min-height: 900px;
+    max-height: 930px;
 
     & .card__info-wrapper {
         min-height: 250px;

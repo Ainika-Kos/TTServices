@@ -1,7 +1,6 @@
 @import '../../styles/variables';
 
 .hero {
-    background-image: url('../../assets/images/big_slide_01.jpg');
     width: 100%;
     height: auto;
     background-position: center center;
@@ -9,7 +8,35 @@
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
+    -webkit-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
 }
+
+
+.hero--1 {
+    background-image: url('../../assets/images/big_slide_01.jpg');
+}
+
+.hero--2 {
+    background-image: url('../../assets/images/big_slide_02.jpg');
+}
+
+.hero--3 {
+    background-image: url('../../assets/images/big_slide_03.jpg');
+}
+
+// .hero__image-wrapper{
+//     position: relative;
+//     padding-top: 51.66%;
+//     width: 100%;
+// }
+
+// .hero__image {
+//     width: 100%;
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+// }
 
 .hero__card-wrapper {
     height: 100%;

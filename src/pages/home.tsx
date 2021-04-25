@@ -25,7 +25,7 @@ const Home = () => {
     .filter(({ category }) => category === 'galeryCard');
   
   return (
-    <div>
+    <div className="page-wrapper">
       <section>
         <Hero cardsCategoryData={heroCardsData} />
       </section>
