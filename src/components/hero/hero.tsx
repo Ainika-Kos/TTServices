@@ -43,7 +43,8 @@ const Hero: FC<HeroProps> = ({ cardsCategoryData }) => {
         background,
         photoCount,
         image,
-        icon
+        icon,
+        iconClass
       }) => {
         return (
           <div key={id} className="hero__card-wrapper">
@@ -60,6 +61,7 @@ const Hero: FC<HeroProps> = ({ cardsCategoryData }) => {
               photoCount={photoCount}
               image={image}
               icon={icon}
+              iconClass={iconClass}
             />
           </div>
         );

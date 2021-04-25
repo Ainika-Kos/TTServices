@@ -53,7 +53,8 @@ const Complex: FC = () => {
             background,
             photoCount,
             image,
-            icon
+            icon,
+            iconClass
           }) => {
             return (
               <div className={`complex__landscape-wrapper ${backgrounds[activeIndex].slide}`} key={id}>
@@ -70,6 +71,7 @@ const Complex: FC = () => {
                   photoCount={photoCount}
                   image={image}
                   icon={icon}
+                  iconClass={iconClass}
                 />
               </div>
             );
@@ -101,7 +103,8 @@ const Complex: FC = () => {
             background,
             photoCount,
             image,
-            icon
+            icon,
+            iconClass
           }) => {
             return (
               <div className="complex__card-wrapper" key={id}>
@@ -118,6 +121,7 @@ const Complex: FC = () => {
                   photoCount={photoCount}
                   image={image}
                   icon={icon}
+                  iconClass={iconClass}
                 />
               </div>
             );

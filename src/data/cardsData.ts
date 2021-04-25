@@ -14,6 +14,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 4,
@@ -56,6 +59,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 5,
@@ -70,6 +74,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 6,
@@ -84,6 +89,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 7,
@@ -98,6 +104,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 8,
@@ -112,6 +119,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 9,
@@ -126,6 +134,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 10,
@@ -140,6 +149,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 11,
@@ -154,6 +164,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 12,
@@ -168,6 +179,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 13,
@@ -182,6 +194,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 14,
@@ -196,6 +209,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 15,
@@ -210,6 +224,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 16,
@@ -224,6 +239,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 17,
@@ -238,6 +254,7 @@ export const cardsData: CardType[] = [
     photoCount: 0,
     image: '',
     icon: '',
+    iconClass: '',
   },
   {
     id: 18,
@@ -251,7 +268,8 @@ export const cardsData: CardType[] = [
     background: 'champagne',
     photoCount: 24,
     image: 'eye',
-    icon: 'photocamera'
+    icon: 'photocamera',
+    iconClass: 'icon--grey',
   },
   {
     id: 19,
@@ -265,7 +283,8 @@ export const cardsData: CardType[] = [
     background: 'macaroon',
     photoCount: 105,
     image: 'jacket',
-    icon: 'photocamera'
+    icon: 'photocamera',
+    iconClass: 'icon--brown',
   },
   {
     id: 20,
@@ -279,7 +298,8 @@ export const cardsData: CardType[] = [
     background: 'lemongrass',
     photoCount: 17,
     image: 'bubble',
-    icon: 'photocamera'
+    icon: 'photocamera',
+    iconClass: 'icon--green',
   },
 ];
 

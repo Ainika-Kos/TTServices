@@ -17,7 +17,9 @@ const Card: FC<CardType> = ({
   background,
   photoCount,
   image,
-  icon }) => {
+  icon,
+  iconClass
+}) => {
 
   const imageURL = `${process.env.PUBLIC_URL}/images/${image}.jpg`;
 
@@ -34,7 +36,7 @@ const Card: FC<CardType> = ({
       {icon ? (
         <div className="card__icon-wrapper">
           <span className="card__photoCount">{photoCount}</span>
-          <FontAwesomeIcon icon={faCameraRetro} size="7x" className="card__icon" />
+          <FontAwesomeIcon icon={faCameraRetro} size="7x" className={`card__icon ${iconClass}`} />
         </div> ) : ('')}
     </div>
   );

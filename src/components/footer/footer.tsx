@@ -8,7 +8,9 @@ import './footer.scss';
 const Footer: FC = () => {
   return (
     <footer className="footer">
-      <Logo />
+      <div className="footer__logo">
+        <Logo />
+      </div>
       <div className="footer__info-wrapper">
         <div className="footer__info__contacts">
           <p className="text-uppercase">decision-2016</p>

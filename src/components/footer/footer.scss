@@ -163,10 +163,10 @@
 
 @media only screen and (max-width: 650px) {
 
-    .footer {
-        & .logo {
-           text-align: center;
-        }
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer__info-wrapper {

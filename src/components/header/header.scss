@@ -18,11 +18,6 @@
     flex-basis: 15%;
 }
 
-.header__hamburger {
-    display: none;
-    flex-basis: 0%;
-}
-
 @media only screen and (max-width: 900px) {
 
     .header {
@@ -60,11 +55,6 @@
     }
 
     .header__search {
-        flex-basis: 25%;
-    }
-
-    .header__hamburger {
-        display: flex;
         flex-basis: 25%;
     }
 

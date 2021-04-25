@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import Hamburger from '../hamburger/hamburger';
 import Logo from '../logo/logo';
 import Nav from '../nav/nav';
 import Search from '../search/search';
@@ -16,9 +15,6 @@ const Header: FC = () => {
       </div>
       <div className="header__search">
         <Search />
-      </div>
-      <div className="header__hamburger">
-        <Hamburger />
       </div>
     </header>
   );

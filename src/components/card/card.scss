@@ -23,13 +23,25 @@
         & .card__photoCount {
             position: absolute;
             bottom: 20%;
-            left: 3%;
+            left: 2%;
             font-size: 16px;
             font-weight: 700;
+            color: $textGrey;
         }
 
         & .card__icon {
-           color: $photoIconGrey;
+
+           &.icon--grey {
+               color: $photoIconGrey;
+           }
+
+           &.icon--brown {
+                color: $photoIconBrown;
+           }
+
+           &.icon--green {
+                color: $photoIconGreen;
+           }
         }
     }
 }
@@ -55,6 +67,41 @@
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+/* card icon photo count and icon properties */
+.card {
+    
+    & .card__icon-wrapper {
+        position: absolute;
+        bottom: -3%;
+        right: 0;
+        overflow: hidden;
+
+        & .card__photoCount {
+            position: absolute;
+            bottom: 20%;
+            left: 2%;
+            font-size: 16px;
+            font-weight: 700;
+            color: $textGrey;
+        }
+
+        & .card__icon {
+
+           &.icon--grey {
+               color: $photoIconGrey;
+           }
+
+           &.icon--brown {
+                color: $photoIconBrown;
+           }
+
+           &.icon--green {
+                color: $photoIconGreen;
+           }
+        }
+    }
 }
 
 /* custom card properties */
@@ -152,7 +199,13 @@
      & button {
         margin-top: 200px;
      }
+
+     & .card__info-wrapper {
+        width: 300px;
+        min-height: 200px;
+     }
 }
+
 
 /* dynamic color properties */
 .white {
@@ -225,11 +278,19 @@
 /* responsive design */
 @media only screen and (max-width: 1300px) {
 
+    .heroCard {
+
+        & .card__info__title {
+            font-size: 26px;
+        }
+    }
+
     .heroCard,
     .portraitCardBig,
     .portraitCardSmall,
     .landscapeCard,
-    .smallPostCard {
+    .smallPostCard,
+    .bigPostCard {
         padding: 20px;
     }
 
@@ -247,6 +308,10 @@
         & .card__info-wrapper{
             min-height: 200px;
             padding: 20px;
+        }
+
+        & button {
+            margin-left: 20px;
         }
 
     }
@@ -288,6 +353,13 @@
     .galeryCard {
         min-height: 500px;
     }
+
+    .smallPostCard {
+
+        & .card__info__title {
+            font-size: 26px;
+        }
+    }
     
 }
 
@@ -318,9 +390,17 @@
         }
     }
 
+
     .galeryCard {
         min-height: 400px;
 
+    }
+
+    .bigPostCard {
+
+        & .card__info-wrapper {
+            max-width: 200px;
+        }
     }
 
 }

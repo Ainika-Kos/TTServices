@@ -70,7 +70,18 @@
 @media only screen and (max-width: 500px) {
 
     .navigation {
-        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     
 }

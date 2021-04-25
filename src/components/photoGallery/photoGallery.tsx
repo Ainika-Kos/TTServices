@@ -33,7 +33,8 @@ const PhotoGalery: FC<PhotoGalleryProps> = ({ cardsCategoryData }) => {
           background,
           photoCount,
           image,
-          icon
+          icon,
+          iconClass
         }) => {
           return (
             <div key={id} className="photoGallery__card-wrapper">
@@ -50,6 +51,7 @@ const PhotoGalery: FC<PhotoGalleryProps> = ({ cardsCategoryData }) => {
                 photoCount={photoCount}
                 image={image}
                 icon={icon}
+                iconClass={iconClass}
               />
             </div>
           );

@@ -11,6 +11,7 @@ export type CardType = {
   photoCount: number;
   image: string;
   icon: string;
+  iconClass: string;
 };
 
 export type NewsType = {
