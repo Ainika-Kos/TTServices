@@ -19,6 +19,21 @@
 
 .complex__landscape-wrapper {
     flex-basis: 66.66%;
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
+}
+
+.landscape--1 {
+    background-image: url('../../assets/images/landscape_01.jpg');
+}
+
+.landscape--2 {
+    background-image: url('../../assets/images/landscape_02.jpg');
 }
 
 .complex__articles-wrapper {

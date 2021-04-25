@@ -1,4 +1,5 @@
 import React, { FC, useState, useEffect } from 'react';
+import { sliderData } from '../../data/sliderData';
 import { CardType } from '../../data/types';
 import Card from '../card/card';
 import './hero.scss';
@@ -9,15 +10,17 @@ type HeroProps = {
 
 const Hero: FC<HeroProps> = ({ cardsCategoryData }) => {
 
-  const backgrounds = ['hero--1', 'hero--2', 'hero--3'];
-  const length = backgrounds.length - 2;
-
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const backgrounds = sliderData
+    .filter(({ category }) => category === 'hero');
+  
+  const length = backgrounds.length - 1;
 
   useEffect(() => {
 
     setTimeout(() => {
-      if (activeIndex > length) {
+      if (activeIndex >= length) {
         setActiveIndex(0);
       } else {
         setActiveIndex(activeIndex + 1);
@@ -26,9 +29,8 @@ const Hero: FC<HeroProps> = ({ cardsCategoryData }) => {
     
   });
 
-
   return (
-    <div className={`hero fade ${backgrounds[activeIndex]}`}>
+    <div className={`hero ${backgrounds[activeIndex].slide}`}>
       {cardsCategoryData.map(({
         id,
         category,

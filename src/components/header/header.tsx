@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Logo from '../logo/logo';
 import Nav from '../nav/nav';
 import Search from '../search/search';
 import './header.scss';
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <header className="header">
       <div className="container">

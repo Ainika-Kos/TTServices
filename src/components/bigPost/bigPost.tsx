@@ -1,4 +1,5 @@
-import React, { FC } from 'react';
+import React, { FC, useState, useEffect } from 'react';
+import { sliderData } from '../../data/sliderData';
 import { CardType } from '../../data/types';
 import Card from '../card/card';
 import './bigPost.scss';
@@ -9,9 +10,27 @@ type BigPostProps = {
 
 const BigPost: FC<BigPostProps> = ({ cardsCategoryData }) => {
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const backgrounds = sliderData
+    .filter(({ category }) => category === 'bigPost');
+  
+  const length = backgrounds.length - 1;
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      if (activeIndex >= length) {
+        setActiveIndex(0);
+      } else {
+        setActiveIndex(activeIndex + 1);
+      }
+    }, 3000);
+    
+  });
 
   return (
-    <div className="bigPost">
+    <div className={`bigPost ${backgrounds[activeIndex].slide}`}>
       {cardsCategoryData.map(({
         id,
         category,

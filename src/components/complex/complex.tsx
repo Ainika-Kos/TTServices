@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import NewsBlock from '../newsBlock/newsBlock';
 import { newsData } from '../../data/newsData';
 import { articlesData } from '../../data/articlesData';
@@ -6,8 +6,28 @@ import './complex.scss';
 import Card from '../card/card';
 import { cardsData } from '../../data/cardsData';
 import CardArticles from '../cardArticles/cardArticles';
+import { sliderData } from '../../data/sliderData';
 
-const Complex = () => {
+const Complex: FC = () => {
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const backgrounds = sliderData
+    .filter(({ category }) => category === 'landscape');
+  
+  const length = backgrounds.length - 1;
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      if (activeIndex >= length) {
+        setActiveIndex(0);
+      } else {
+        setActiveIndex(activeIndex + 1);
+      }
+    }, 3000);
+    
+  });
 
   const landscapeData = cardsData
     .filter(({ category }) => category === 'landscapeCard');
@@ -36,7 +56,7 @@ const Complex = () => {
             icon
           }) => {
             return (
-              <div className="complex__landscape-wrapper" key={id}>
+              <div className={`complex__landscape-wrapper ${backgrounds[activeIndex].slide}`} key={id}>
                 <Card
                   id={id}
                   category={category}

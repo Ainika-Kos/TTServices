@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import './more.scss';
 
-const More:FC = () => {
+const More: FC = () => {
   return (
     <div className="more">
       <p className="more__text">More</p>

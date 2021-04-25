@@ -1,7 +1,6 @@
 @import '../../styles/variables';
 
 .bigPost {
-    background-image: url('../../assets/images/bigPost.jpg');
     width: 100%;
     height: auto;
     background-position: center center;
@@ -9,6 +8,15 @@
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
+    transition: background-image 1s ease-in-out;
+}
+
+.bigPost--1 {
+    background-image: url('../../assets/images/bigPost_01.jpg');
+}
+
+.bigPost--2 {
+    background-image: url('../../assets/images/bigPost_02.jpg');
 }
 
 .bigPost__card-wrapper {

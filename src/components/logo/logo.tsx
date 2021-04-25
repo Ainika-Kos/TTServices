@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { useHistory } from 'react-router-dom';
 import './logo.scss';
 
-const Logo = () => {
+const Logo: FC = () => {
 
   const history = useHistory();
 

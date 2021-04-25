@@ -26,4 +26,7 @@ export type ArticlesType = {
   time: string,
 };
 
-
+export type SliderType = {
+  category: string;
+  slide: string;
+};
