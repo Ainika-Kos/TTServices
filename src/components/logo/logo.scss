@@ -9,4 +9,10 @@
     color: $logo;
     cursor: pointer;
     outline: none;
+
+    transition: color 0.5s;
+
+        &:hover {
+            color: $textGrey;
+        }
 }

@@ -1,9 +1,26 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const Blog = () => {
+
+  const history = useHistory();
+
+  const goBackClickHandler = () => {
+    history.push('/');
+  };
+
   return (
-    <div>
-      <h1>This is Blog page</h1>
+    <div className="page">
+      <h1>Page "Blog"</h1>
+      <div
+        className="page__goback"
+        role="button"
+        onClick={goBackClickHandler}
+        tabIndex={0}
+        onKeyDown={goBackClickHandler}
+      >
+        Go back Home
+      </div>
     </div>
   );
 };

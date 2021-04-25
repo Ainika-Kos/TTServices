@@ -1,17 +1,17 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-const Services = () => {
+const Articles = () => {
 
   const history = useHistory();
 
   const goBackClickHandler = () => {
     history.push('/');
   };
-
+    
   return (
     <div className="page">
-      <h1>Page "Services"</h1>
+      <h1>Page "Articles"</h1>
       <div
         className="page__goback"
         role="button"
@@ -25,4 +25,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Articles;

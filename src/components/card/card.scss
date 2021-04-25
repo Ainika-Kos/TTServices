@@ -1,5 +1,6 @@
 @import '../../styles/variables';
 
+/* main card properties */
 .card {
     height: 100%;
     margin: 0;
@@ -56,13 +57,17 @@
     text-transform: uppercase;
 }
 
-
+/* custom card properties */
 .heroCard {
     min-height: 900px;
     max-height: 930px;
 
     & .card__info-wrapper {
         min-height: 250px;
+    }
+
+    & button {
+        margin-top: 550px;
     }
 }
 
@@ -73,6 +78,10 @@
        width: 300px;
        min-height: 200px;
     }
+
+    & button {
+        margin-top: 130px;
+    }
 }
 
 .smallPostCard {
@@ -80,7 +89,11 @@
 
     & .card__info-wrapper {
         min-height: 200px;
-     }
+    }
+
+    & button {
+        margin-top: 30px;
+    }
 }
 
 .galeryCard {
@@ -88,51 +101,60 @@
     height: auto;
     padding: 0;
     
-
     & .card__info-wrapper {
         min-height: 240px;
         padding: 45px 60px;
     }
 
+    & button {
+        margin-left: 60px;
+        margin-top: 40px;
+    }
+
 }
 
-.portraitCardSmall {
-    min-height: 755px;
+.portraitCardSmall,
+.portraitCardBig,
+.bigPostCard {
     width: 100%;
     height: auto;
-    padding: 45px 80px 45px 60px;
 
     & .card__info-wrapper {
         min-height: 200px;
     }
 
+    & button {
+        color: $textWhite;
+    }
+}
+
+.portraitCardSmall,
+.portraitCardBig {
+
+    & button {
+        margin-top: 400px;
+    }
+}
+
+
+.portraitCardSmall {
+    min-height: 755px;
+    padding: 45px 80px 45px 60px;
 }
 
 .portraitCardBig {
     min-height: 790px;
-    width: 100%;
-    height: auto;
-
-    & .card__info-wrapper {
-        min-height: 200px;
-    }
-
 }
 
 .bigPostCard {
     min-height: 695px;
-    width: 100%;
-    height: auto;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    & .card__info-wrapper {
-        min-height: 200px;
-    }
-
+     & button {
+        margin-top: 200px;
+     }
 }
 
+/* dynamic color properties */
 .white {
     color: $textWhite;
 }
@@ -200,7 +222,7 @@
     background-color: $macaroon;
 }
 
-
+/* responsive design */
 @media only screen and (max-width: 1300px) {
 
     .heroCard,
@@ -214,6 +236,10 @@
     .portraitCardBig,
     .portraitCardSmall {
         min-height: 650px;
+
+        & button {
+            margin-top: 300px;
+        }
     }
 
     .galeryCard {
@@ -223,6 +249,13 @@
             padding: 20px;
         }
 
+    }
+
+    .landscapeCard {
+
+        & button {
+            margin-top: 235px;
+        }
     }
     
 }
@@ -236,12 +269,20 @@
         & .card__info-wrapper{
             min-height: 150px;
         }
+
+        & button {
+            margin-top: 100px;
+        }
     } 
 
     .portraitCardBig,
     .portraitCardSmall {
         min-height: 400px;
         padding: 30px;
+
+        & button {
+            margin-top: 100px;
+        }
     }
 
     .galeryCard {
@@ -259,13 +300,22 @@
         .card__info-wrapper{
             min-height: 150px;
         }
+
+        & button {
+            margin-top: 50px;
+        }
     }
+
 
     .portraitCardBig,
     .portraitCardSmall,
     .smallPostCard {
         min-height: 350px;
         padding: 30px;
+
+        & button {
+            margin-top:70px;
+        }
     }
 
     .galeryCard {

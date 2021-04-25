@@ -1,5 +1,6 @@
 @import '../../styles/variables';
 
+/* main button properties + custom styles */
 .btn {
     width: 95px;
     min-height: 25px;
@@ -75,74 +76,11 @@
     }
 }
 
-.btn--hero {
-    margin-top: 550px;
-}
-
-.btn--landscape {
-    margin-top: 130px;
-}
-
-.btn--smallPost {
-    margin-top: 30px;
-}
-
-.btn--portraits {
-    color: $textWhite;
-    margin-top: 400px;
-}
-
-.btn--galeryCard {
-    margin-left: 60px;
-    margin-top: 40px;
-}
-
-
-.btn--bigPost {
-    color: $textWhite;
-    margin-top: 200px;
-}
-
+/* button style for Gallery block */
 .gallery {
     color: $textWhite;
     background-color: $buttonSalmon;
     min-height: 40px;
     min-width: 140px;
     font-size: 18px;
-}
-
-@media only screen and (max-width: 1300px) {
-
-    .btn--portraits {
-        margin-top: 200px;
-    }
-
-    .btn--landscape {
-        margin-top: 235px;
-    }
-    
-}
-
-@media only screen and (max-width: 900px) {
-
-    .btn--hero {
-        margin-top: 100px;
-    }
-
-    .btn--portraits {
-        margin-top: 100px;
-    }
-    
-}
-
-@media only screen and (max-width: 650px) {
-
-    .btn--hero {
-        margin-top: 50px;
-    }
-
-    .btn--portraits {
-        margin-top: 70px;
-    }  
-    
 }
