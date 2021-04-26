@@ -10,7 +10,6 @@ export const sliderData: SliderType[] = [
     slide: 'hero--2',
   },
   {
-        
     category: 'hero',
     slide: 'hero--3',
   },

@@ -17,41 +17,37 @@ const App = () => {
 
     <div className="app">
       <Router>
-        <div className="app__content">
-          <Header /> 
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/blog">
-              <Blog />
-            </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route path="/services">
-              <Services />
-            </Route>
-            <Route path="/news">
-              <News />
-            </Route>
-            <Route path="/categories">
-              <Categories />
-            </Route>
-            <Route path="/contacts">
-              <Contacts />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/articles">
-              <Articles />
-            </Route>
-          </Switch>
-        </div>
-        <div className="app__footer">
-          <Footer />
-        </div>
+        <Header /> 
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/services">
+            <Services />
+          </Route>
+          <Route path="/news">
+            <News />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/articles">
+            <Articles />
+          </Route>
+        </Switch>
+        <Footer />
       </Router>
     </div>
   );

@@ -1,9 +1,10 @@
 @import "variables";
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 @font-face {
   font-family: 'Jellee';
-  src: local('Jellee'), url(../assets/fonts/Jellee-Roman.ttf) format('truetype');
+  src: local('Jellee'), url(../assets/fonts/Jelle/Jellee-Roman.ttf) format('truetype');
 }
 
 * {
@@ -23,7 +24,6 @@ body {
 
 .app {
   width: 100%;
-  
 }
 
 .page {
