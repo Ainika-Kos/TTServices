@@ -1,0 +1,50 @@
+@import '../../../styles/variables';
+
+.hero {
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    transition: background-image 1s ease-in-out;
+}
+
+
+.hero--1 {
+    background-image: url('../../../assets/images/big_slide_01.jpg');
+}
+
+.hero--2 {
+    background-image: url('../../../assets/images/big_slide_02.jpg');
+}
+
+.hero--3 {
+    background-image: url('../../../assets/images/big_slide_03.jpg');
+}
+
+.hero__card-wrapper {
+    height: 100%;
+    min-height: 800px;
+    flex-basis: 25%;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .hero__card-wrapper {
+        min-height: 400px;
+        flex-basis: 50%;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+
+    .hero__card-wrapper {
+        min-height: 180px;
+        flex-basis: 100%;
+    }
+    
+}
+

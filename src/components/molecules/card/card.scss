@@ -1,0 +1,406 @@
+@import '../../../styles/variables';
+
+/* main card properties */
+.card {
+    height: 100%;
+    margin: 0;
+    padding: 45px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    & .card__icon-wrapper {
+        position: absolute;
+        bottom: -3%;
+        right: 0;
+        overflow: hidden;
+
+        & .card__photoCount {
+            position: absolute;
+            bottom: 20%;
+            left: 2%;
+            font-size: 16px;
+            font-weight: 700;
+            color: $textGrey;
+        }
+
+        & .card__icon {
+
+           &.icon--grey {
+               color: $photoIconGrey;
+           }
+
+           &.icon--brown {
+                color: $photoIconBrown;
+           }
+
+           &.icon--green {
+                color: $photoIconGreen;
+           }
+        }
+    }
+}
+
+.card__image {
+    width:100%;
+    height: auto;
+}
+
+.card__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__info__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card__info__time {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* card icon photo count and icon properties */
+.card {
+    
+    & .card__icon-wrapper {
+        position: absolute;
+        bottom: -3%;
+        right: 0;
+        overflow: hidden;
+
+        & .card__photoCount {
+            position: absolute;
+            bottom: 20%;
+            left: 2%;
+            font-size: 16px;
+            font-weight: 700;
+            color: $textGrey;
+        }
+
+        & .card__icon {
+
+           &.icon--grey {
+               color: $photoIconGrey;
+           }
+
+           &.icon--brown {
+                color: $photoIconBrown;
+           }
+
+           &.icon--green {
+                color: $photoIconGreen;
+           }
+        }
+    }
+}
+
+/* custom card properties */
+.heroCard {
+    min-height: 900px;
+    max-height: 930px;
+
+    & .card__info-wrapper {
+        min-height: 250px;
+    }
+
+    & button {
+        margin-top: 550px;
+    }
+}
+
+.landscapeCard {
+    min-height: 539px;
+
+    & .card__info-wrapper {
+       width: 300px;
+       min-height: 200px;
+    }
+
+    & button {
+        margin-top: 130px;
+    }
+}
+
+.smallPostCard {
+    min-height: 391px;
+
+    & .card__info-wrapper {
+        min-height: 200px;
+    }
+
+    & button {
+        margin-top: 30px;
+    }
+}
+
+.galeryCard {
+    min-height: 639px;
+    height: auto;
+    padding: 0;
+    
+    & .card__info-wrapper {
+        min-height: 240px;
+        padding: 45px 60px;
+    }
+
+    & button {
+        margin-left: 60px;
+        margin-top: 40px;
+    }
+
+}
+
+.portraitCardSmall,
+.portraitCardBig,
+.bigPostCard {
+    width: 100%;
+    height: auto;
+
+    & .card__info-wrapper {
+        min-height: 200px;
+    }
+
+    & button {
+        color: $textWhite;
+    }
+}
+
+.portraitCardSmall,
+.portraitCardBig {
+
+    & button {
+        margin-top: 400px;
+    }
+}
+
+
+.portraitCardSmall {
+    min-height: 755px;
+    padding: 45px 80px 45px 60px;
+}
+
+.portraitCardBig {
+    min-height: 790px;
+}
+
+.bigPostCard {
+    min-height: 695px;
+
+     & button {
+        margin-top: 200px;
+     }
+
+     & .card__info-wrapper {
+        width: 300px;
+        min-height: 200px;
+     }
+}
+
+
+/* dynamic color properties */
+.white {
+    color: $textWhite;
+}
+
+.black {
+    color: $textBlack;
+}
+
+.grey {
+    color: $textGrey;
+}
+
+
+/* background images */
+.watermelon {
+    background-image: url('../../../assets/images/watermelon.jpg');
+}
+
+.cactus {
+    background-image: url('../../../assets/images/cactus.jpg');
+}
+
+.building {
+    background-image: url('../../../assets/images/building.jpg');
+}
+
+.cup {
+    background-image: url('../../../assets/images/cup.jpg');
+}
+
+.wheel {
+    background-image: url('../../../assets/images/wheel.jpg');
+}
+
+.shoes {
+    background-image: url('../../../assets/images/shoes.jpg');
+}
+
+.woman {
+    background-image: url('../../../assets/images/woman.jpg');
+}
+
+.pinapple {
+    background-image: url('../../../assets/images/pinapple.jpg');
+}
+
+.man {
+    background-image: url('../../../assets/images/man.jpg');
+}
+
+/* background colors */ 
+.lemongrass {
+    background-color: $lemongrass;
+}
+
+.aqua {
+    background-color: $aqua;
+}
+
+.champagne {
+    background-color: $champagne;
+}
+
+.macaroon {
+    background-color: $macaroon;
+}
+
+/* responsive design */
+@media only screen and (max-width: 1300px) {
+
+    .heroCard {
+
+        & .card__info__title {
+            font-size: 26px;
+        }
+    }
+
+    .heroCard,
+    .portraitCardBig,
+    .portraitCardSmall,
+    .landscapeCard,
+    .smallPostCard,
+    .bigPostCard {
+        padding: 20px;
+    }
+
+    .portraitCardBig,
+    .portraitCardSmall {
+        min-height: 650px;
+
+        & button {
+            margin-top: 300px;
+        }
+    }
+
+    .galeryCard {
+
+        & .card__info-wrapper{
+            min-height: 200px;
+            padding: 20px;
+        }
+
+        & button {
+            margin-left: 20px;
+        }
+
+    }
+
+    .landscapeCard {
+
+        & button {
+            margin-top: 235px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+
+    .heroCard {
+        padding: 30px;
+        min-height: 400px;
+
+        & .card__info-wrapper{
+            min-height: 150px;
+        }
+
+        & button {
+            margin-top: 100px;
+        }
+    } 
+
+    .portraitCardBig,
+    .portraitCardSmall {
+        min-height: 400px;
+        padding: 30px;
+
+        & button {
+            margin-top: 100px;
+        }
+    }
+
+    .galeryCard {
+        min-height: 500px;
+    }
+
+    .smallPostCard {
+
+        & .card__info__title {
+            font-size: 26px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+
+    .heroCard {
+        padding: 30px;
+        min-height: 200px;
+
+        .card__info-wrapper{
+            min-height: 150px;
+        }
+
+        & button {
+            margin-top: 50px;
+        }
+    }
+
+
+    .portraitCardBig,
+    .portraitCardSmall,
+    .smallPostCard {
+        min-height: 350px;
+        padding: 30px;
+
+        & button {
+            margin-top:70px;
+        }
+    }
+
+
+    .galeryCard {
+        min-height: 400px;
+
+    }
+
+    .bigPostCard {
+
+        & .card__info-wrapper {
+            max-width: 200px;
+        }
+    }
+
+}

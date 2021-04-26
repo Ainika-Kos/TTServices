@@ -1,10 +1,10 @@
 import React from 'react';
-import BigPost from '../components/bigPost/bigPost';
-import Complex from '../components/complex/complex';
-import Hero from '../components/hero/hero';
-import More from '../components/more/more';
-import PhotoGallery from '../components/photoGallery/photoGallery';
-import Portraits from '../components/portraits/portraits';
+import BigPost from '../components/organisms/bigPost/bigPost';
+import Complex from '../components/organisms/complex/complex';
+import Hero from '../components/organisms/hero/hero';
+import More from '../components/organisms/more/more';
+import PhotoGallery from '../components/organisms/photoGallery/photoGallery';
+import Portraits from '../components/organisms/portraits/portraits';
 import { cardsData } from '../data/cardsData';
 
 const Home = () => {

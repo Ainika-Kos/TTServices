@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Footer from './components/footer/footer';
-import Header from './components/header/header';
+import Footer from './components/organisms/footer/footer';
+import Header from './components/organisms/header/header';
 import About from './pages/about';
 import Articles from './pages/articles';
 import Blog from './pages/blog';
